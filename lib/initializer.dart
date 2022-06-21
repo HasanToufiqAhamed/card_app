@@ -24,7 +24,7 @@ class Initializer {
     connect.httpClient.maxAuthRetries = 0;
     connect.httpClient.addRequestModifier<dynamic>(
       (request) {
-        request.headers['Content-Type'] = 'application/json';
+        request.headers['Content-Type'] = 'application/json t';
         return request;
       },
     );
