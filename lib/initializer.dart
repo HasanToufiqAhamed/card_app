@@ -16,7 +16,7 @@ class Initializer {
     final fcm = GetConnect();
     Get.put(
       fcm,
-      tag: 'fcm  t',
+      tag: 'fcmt  t',
     );
     final url = ConfigEnvironments.getEnvironments()['url'];
     connect.baseUrl = url;
@@ -24,7 +24,7 @@ class Initializer {
     connect.httpClient.maxAuthRetries = 0;
     connect.httpClient.addRequestModifier<dynamic>(
       (request) {
-        request.headers['Content-Type'] = 'application/json t';
+        request.headers['Content-Type'] = 'application/json';
         return request;
       },
     );
