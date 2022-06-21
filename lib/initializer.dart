@@ -16,7 +16,7 @@ class Initializer {
     final fcm = GetConnect();
     Get.put(
       fcm,
-      tag: 'fcm',
+      tag: 'fcm  t',
     );
     final url = ConfigEnvironments.getEnvironments()['url'];
     connect.baseUrl = url;
